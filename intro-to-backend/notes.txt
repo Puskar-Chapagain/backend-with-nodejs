@@ -1,0 +1,53 @@
+
+
+## Intro to backend ##
+
+client - a system that requests the server for resources
+server - a system that serves the request of the client i.e. it responds to the client's 
+         request.
+
+Client(Frontend)
+Server(Backend)
+
+Client can be anything - browser, applications, IoT devices, or another applications
+Server - it is also a computer/system
+
+Other types of architecture are also there, such as:
+Peer to Peer architecture - e.g torrent
+
+
+## CLI vs GUI ##
+
+Based on how we interact with computer, the applications can be divided into two ways:
+ 
+- CLI Command Line Interface
+    text based interface where user type command to perfrom tasks
+    terminal/console 
+    command prompt - Windows
+    terminal - Mac/Linux
+
+Nodejs is a CLI application. 
+
+
+eg.  Git, npm, yt-dlp
+
+- GUI Graphical User Interface
+    visual interface where user interact with the system through graphical elements...
+    buttons,menus,icons,windows...
+    click,drag,drop,scroll
+
+What is Nodejs ?
+
+-to run JS outside the browser
+- OS resources access 
+web servers, CLI applications, IoT
+
+npm, TypeScript, CRA, ESlint, Babel, Yarn
+VueCLI, AngularCLI, Prettier
+
+TypeScript was originally made of JS . JS to TS transition was done later on.
+
+Web Server and API  -- main focus
+
+
+localhost ~ 127.0.0.1 

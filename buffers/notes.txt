@@ -1,0 +1,113 @@
+ARRAY BUFFER IN JS
+
+Buffers and Streams are necessary to:
+    make performant applications
+
+Array buffers in JS 
+Typed Array in Nodejs
+
+array buffer - array of bytes
+@GB limit max
+
+to create an array buffer :
+new ArrayBuffer()
+//this will create an array buffer of 0 bytes
+
+new ArrayBuffer(4)
+
+but, we cannot access and update the element like that we do in array 
+a[10] or a[20] ="fansidig" --- we can't do this in array buffer 
+
+properties :
+bytelength
+detached 
+maxByteLength 
+resizeable : false --- default value
+
+
+when we create memory like this : it is allcated from our RAM 
+but , it only allocates when we write something to our buffer
+i.e. our memory will spike only when we write to our array buffer
+
+
+to update/write into the array buffer, we use:
+- typed array 
+- data view
+
+
+LE AND BE encoding - changes the order of bytes when one character is represented by 
+more than 1 bytes
+
+By default , JS uses Little Endian
+
+mark and sweep algo 
+array buffer are  automatically garbage collected in js
+
+Buffer of nodejs is a bit diffrent from array Buffer of JS
+
+
+# How to read from and write to  to the array buffer ? 
+
+How negative values are represented in binary ?
+
+
+2 - 00000010
+
+what is -ve 2 then ?
+
+signed number 
+unsigned number 
+
+
+in signed number,
+first digit 1 --> negative   
+            0 --> positive
+
+
+if unsigned
+10000000 --> 128 
+
+if signed -- take twos complement --> 1's compliment + 1 
+10000000 
+1's compliment - 011111111
+2's compliment - +1 
+                 100000000
+
+
+any number greater than 128 
+
+To calculate 2's compliment
+step 1 : Flip the digit
+step 2 : Add 1
+
+lets take 129
+
+10000001
+01111110
++1 
+01111111 ==> 127 
+
+any number less than or equal to 127 , if we calculate 2's compliment for the number 
+it will be the same as the number itself
+
+## explore signed to unsigned calulator 
+
+
+1111 0001 ==> 241
+
+if this number is read as a singed integer -- it will be read as -15
+if it is read as a unsigned integer -- it will be read as 241
+
+biggest integer that can be stored as 1 byte signed -- 01111111 i.e. 127
+smallest negative integer -- 10000000 i.e. -128
+largest negative integer -- 11111111 i.e. -1
+
+8 bit signed => -128 to 127
+8 bit unsigned => 0 to 255
+
+READING FROM AND WRITING TO ARRAY BUFFERS
+
+
+
+
+

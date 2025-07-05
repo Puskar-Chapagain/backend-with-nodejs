@@ -1,0 +1,125 @@
+
+Basic Security 
+
+Common 
+Vulnerability 
+
+NO SYSTEM IS 100% secure
+
+Why security is important in modern web applications ?
+
+data breach 
+reputational damage
+financial loss
+legal consequences
+
+Protect User Data
+Prevent Unauthorized Access
+Ensure Business Continuity 
+Compliance with Laws and Standards
+Maintain Reputation and Trust
+
+Make sure that the known vulnerabilities are not there
+
+Common Security Threats in Web Apps 
+SQL Injection - happens in NoSQL db too
+Cross-Site Scripting XSS
+Cross-Site Request Forgery CSRF
+Broken Authentication 
+Insecure Direct Object References (IDOR)
+Sensitive Data Exposure
+Security Misconfiguration
+Denial of Service(DoS/DDoS)
+Using Modules/Packages with Known Vulnerabilities
+Insufficient Logging and Monitoring
+Protecting sensitive secrets in the environment variables
+( DB connection URL , JWT secret )
+
+Environment variables 
+- whenever an a process is run on our system, it can have access to a set of variables 
+which is called env variables
+- used to manage sensitive or environment-specific configuration without hardcoding them into 
+our source code
+
+How to add environment variables ?
+
+One way - Add it in the command when running the file
+ABCD = 12345 node script.js
+- executes only once i.e when the file runs with the given set of commands, only then 
+we are able to see/use the environment variables
+
+Another way - Store all the environment variables in the env file
+
+Format of adding the environment variables in the .env file: 
+KEY = value
+eg. ZERO = 0
+
+to run it:
+node --env-file=.env script.js
+
+the value is stored as a string in the environment variable
+
+This is similar to inline and external style concept\
+
+We use env file for the following 
+- when we store sensitive datas 
+    -API Keys
+    -Database URLs
+    -Application Ports
+- when we have different values on the production compared to our local, then also 
+we use environment variables.
+
+.env is just a naming convention , if we want we can name it anything else
+
+We do not put/upload env file in the git. It will expose our environment variables in public 
+and we might get attacks.
+
+we generally mention it in the .gitignore file
+
+Another Approach : importing dotenv package - automatically creates .env file.
+
+import dotenv from 'dotenv';
+dotenv.config();
+
+When using this method, we do not require to give flag when running the file.
+We can simply run it by using : node script.js
+
+
+Native .env Support from Version 20.6.0+
+
+
+What we put in the env variable ?
+
+Secret and Credentials
+    -DB_PASSWORD
+    -JWT_SECRET
+    -SESSION_SECRET
+    -GOOGLE_CLIENT_SECRET
+    -SENGRID_API_KEY
+    -STRIPE_SECRET_KEY
+
+Config that varies by Environment - for dev/staging/prod difference
+    -NODE_ENV
+    -PORT
+    -FRONTEND_URL
+    -MONGO_URI
+    -REDIS_URL
+    -BASE_URL
+
+Feature flags and behavorial control
+
+Public or Non-Sensitive 3rd party URL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
