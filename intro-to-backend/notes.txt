@@ -51,3 +51,49 @@ Web Server and API  -- main focus
 
 
 localhost ~ 127.0.0.1 
+
+When you face issue like the file is running through the terminal and not running when
+debugger is used, in such case, use absolute path. 
+because current working directory of the debugger might be different
+
+
+Hex editor extension - to view binary data
+
+If we do not specify the file encoding eg. "utf-8" as second argument in the readFileSync,
+it will give the binary data.
+
+## Why do we need nodejs and why is it differentn from JS in browser ? ##
+
+- Access to File System (create,read,update,delete,rename,move)
+- Networking Capabilities - creating TCP UDP HTTP etc server 
+- Process Management
+- Interacting with OS
+and more...
+
+give me shortest code to write to a file, change filename in Nodejs
+how to open chrome application using Nodejs
+
+We cannot do the above in vanilla(pure) JS 
+
+## History of Nodejs ##
+
+Apache HTTP server
+new thread for every request
+every request was blocking
+
+- Ryan Dahl - 2009 
+- used Chrome's V8 engine
+- npm launched in 2010 and Windows support came in 2011
+
+- Joyent hired Ryan Dahl in 2012 and Nodejs development started faster
+- IO.js was forked from Node.js in 2014
+- Node.js Foundation in 2015 -> merged io.js and Node.js --> Node.js
+- Node.js LTS version launched
+
+- OpenJS Foundation created in 2019 
+    controls Browser JS + Node.js 
+
+Atwood's Law
+Any application that can be written in JS, will eventually be Written in JS. 
+- Jeff Atwood , Founder of StackOverflow
+
