@@ -134,6 +134,7 @@ Vi -Improved  ---> VIM
 ## What is a Prompt in terminal ## 
 
 PS - Prompt String
+- what we see in the start of the terminal
 
 
 
