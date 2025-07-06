@@ -1,0 +1,143 @@
+
+## Introduction to Terminal and Shell ##
+
+when we are deploying our code and making changes to our deployed code
+we have to interact with the system through the terminal
+
+few terms :
+shells
+CLI applications 
+    Command Prompt
+    Powershells 
+    Terminal
+
+Shells 
+    Bash 
+    zsh(default in Mac)
+
+For Linux command support - we use bash shell
+
+Ctrl ~ - to open the terminal 
+Ctrl J - to close the terminal
+
+Terminal can use multiple shells. 
+We can understand it like browser(terminal) and multiple tabs(shells)
+Each shell has it's own set of commands.
+
+user@PC-name  -- puskar@Puskar
+
+## Basic Shell Commands ##
+
+echo - prints to the terminal
+similar to console.log() in JS
+
+
+
+pwd - shows the present working directory
+
+whoami - shows the current user
+
+## Navigating File System ##
+
+
+cd - change directory 
+cd .. -> go back to one directory
+
+cd ../../ -> go back two directory
+
+cd 
+
+use tab for suggestion
+
+~ home directory
+/ root directory 
+
+## Listing Directory Contents ##
+
+ls 
+
+to view hidden files 
+    ls -a 
+
+./ - current directory 
+../ - parent directory
+
+to view the file permissions
+    ls -al
+
+## Creating, Copying, Moving, and Deleting Files ##
+
+-> to create any file
+touch filename.extension
+
+eg. touch index.html style.css script.js 
+
+-> to create a directory
+mkdir dirname
+
+eg. mkdir dir1 dir2
+
+-> to copy a file or a directory
+cp current-file-path target-file-path
+
+eg. cp app.js src
+
+-> to move a file or a directory
+mv current-file-path target-file-path
+
+-> to rename a file
+use mv command with new file name 
+
+-> to delete a file 
+rm filename
+
+-> to delete a directory 
+rmdir dirname -> when the directory is empty 
+rm -r dirname -> when the directory is not empty 
+
+rm - f 
+
+
+
+when we delete a file from the UI , generally we can recover using Ctrl Z or the recycle 
+bin, but when we delete the file from terminal, we can't recover it
+
+Give me a bash command to generate a app1.js app2.js app3.js upto app100.js file
+
+## Viewing and Editing files with Command Line ##
+
+- to view the contents of the file
+cat filename
+
+- to edit files 
+nano filename
+vi filename
+vim filename
+
+these are not just commands, they are editors in themselves
+
+I - to switch to insert mode 
+Esc - to switch to normal mode
+
+to exit VIM 
+
+:q - exit
+:w - save
+:q! - exit without save
+:wq! - save and exit
+
+when we need to do do changes on our deployment like some quick fix, we use vim in such 
+cases.
+
+Vi -Improved  ---> VIM 
+
+## What is a Prompt in terminal ## 
+
+PS - Prompt String
+
+
+
+
+
+
+
