@@ -31,8 +31,6 @@ user@PC-name  -- puskar@Puskar
 echo - prints to the terminal
 similar to console.log() in JS
 
-
-
 pwd - shows the present working directory
 
 whoami - shows the current user
@@ -136,8 +134,31 @@ Vi -Improved  ---> VIM
 PS - Prompt String
 - what we see in the start of the terminal
 
-this is for test push
-another test push
+echo $PS1 - what we see when we are inside the terminal - like how the directory structure is maintained
+echo $PS2 - when we enter an string and click enter/next line - what is seen in the left side terminal 
+
+till PS3 and PS4
+
+Permanently storing the customized PS1 variable
+
+## Configuring our terminal using bashrc file ##
+
+cd ~/  --> takes us to home directory
+
+explorer . equivalent in Linux 
+nautilus . 
+
+Everytime a new terminal is opened , .bashrc file is run
+
+if you do not want to open new terminal again and again - permanently make changes
+source ~/.bashrc
+
+when we have to use a command repeatedly - we can create a short command - using alias
+
+alias source="source ~/.bashrc"
+
+
+
 
 
 
