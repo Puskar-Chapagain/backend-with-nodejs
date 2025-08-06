@@ -1,0 +1,11 @@
+## What is CPU Processor and Core ##
+
+## What is OS and Kernel ##
+
+## What is a process ? ##
+
+## Thread , Concurrency and Parallelism ##
+
+## Can a process exist without a thread ? ## 
+
+

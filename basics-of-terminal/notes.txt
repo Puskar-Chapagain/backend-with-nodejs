@@ -129,7 +129,7 @@ cases.
 
 Vi -Improved  ---> VIM 
 
-## What is a Prompt in terminal ## 
+## What is a Prompt String in terminal ## 
 
 PS - Prompt String
 - what we see in the start of the terminal

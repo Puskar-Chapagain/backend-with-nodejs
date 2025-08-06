@@ -1,0 +1,21 @@
+expressjs - web framework of nodejs
+
+- helps in creating backend APIs
+
+nestjs is alternative of Nodejs 
+opinionated - strict guideliines to structure the application
+
+MERN stack , E - Express
+
+Middleware is core of express
+
+To install express:
+npm install express
+
+dependencies
+dependencies of dependencies
+
+devdependencies  - that which we need only at the time of develpment of our project
+
+Difference between res.send and res.end 
+
